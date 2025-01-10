@@ -85,6 +85,7 @@ production:
     <<: *default
     database: chuongdz_production
     username: chuongdz
+    url: <%= ENV["DATABASE_URL"] %>
     password: <%= ENV["CHUONGDZ_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
